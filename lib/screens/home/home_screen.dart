@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => ProductOverview(
-                          productId: herbsProductData.productId,
+                          productId: "123",
                           productPrice: herbsProductData.productPrice,
                           productName: herbsProductData.productName,
                           productImage: herbsProductData.productImage,
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   productPrice: herbsProductData.productPrice,
                   productImage: herbsProductData.productImage,
                   productName: herbsProductData.productName,
-                  productUnit:herbsProductData ,
+                  productUnit: herbsProductData,
                 );
               },
             ).toList(),
@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   productImage: freshProductData.productImage,
                   productName: freshProductData.productName,
                   productPrice: freshProductData.productPrice,
-                  productUnit:freshProductData,
+                  productUnit: freshProductData,
                 );
               },
             ).toList(),
@@ -139,7 +139,6 @@ class _HomeScreenState extends State<HomeScreen> {
       ],
     );
   }
-
 
   Widget _buildRootProduct() {
     return Column(

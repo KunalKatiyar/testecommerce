@@ -39,8 +39,7 @@ class _SingalProductState extends State<SingalProduct> {
       child: Row(
         children: [
           Container(
-            margin: EdgeInsets.only(right: 10),
-            height: 230,
+            height: 250,
             width: 165,
             decoration: BoxDecoration(
               color: Color(0xffd9dad9),
@@ -76,7 +75,7 @@ class _SingalProductState extends State<SingalProduct> {
                           ),
                         ),
                         Text(
-                          '${widget.productPrice}\$/${unitData == null?firstValue:unitData}',
+                          '${widget.productPrice}\$/${unitData == null ? firstValue : unitData}',
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -128,19 +127,20 @@ class _SingalProductState extends State<SingalProduct> {
                                         );
                                       });
                                 },
-                                title: unitData == null?firstValue:unitData,
+                                title: unitData == null ? firstValue : unitData,
                               ),
                             ),
                             SizedBox(
                               width: 5,
                             ),
-                            Count(
-                              productId: widget.productId,
-                              productImage: widget.productImage,
-                              productName: widget.productName,
-                              productPrice: widget.productPrice,
-                              productUnit: unitData == null?firstValue:unitData,
-                            ),
+                            // Count(
+                            //   productId: widget.productId,
+                            //   productImage: widget.productImage,
+                            //   productName: widget.productName,
+                            //   productPrice: widget.productPrice,
+                            //   productUnit:
+                            //       unitData == null ? firstValue : unitData,
+                            // ),
                           ],
                         ),
                       ],

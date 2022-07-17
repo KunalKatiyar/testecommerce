@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
       );
 
       final User user = (await _auth.signInWithCredential(credential)).user;
-      // print("signed in " + user.displayName);
+      print("signed in " + user.displayName);
       userProvider.addUserData(
         currentUser: user,
         userEmail: user.email,
